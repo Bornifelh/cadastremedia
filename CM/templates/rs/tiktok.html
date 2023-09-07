@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TikTok</title>
+    <link rel="stylesheet" href="{% static 'css/style-formulaire.css' %}">
+    <link rel="stylesheet" href="{% static 'css/liste_liens.css' %}">
+</head>
+<div style="position: sticky; top: 5px;">
+          {% include 'nav_bar.html' %}
+    </div>
+<body>
+
+
+    <section>
+      <nav>
+        <ul>
+          <div class="dev_form">
+
+
+        <section>
+
+            <div>
+                <h1>Insertion d'un lien Facebook</h1>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="opacity">VALIDER</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Liste des liens TikTok</h1>
+        <div id="loading-spinner" style="display: none;">Loading...</div>
+
+    <table class="tab-content" id="transactions_entree_caisse">
+                <thead>
+                    <tr>
+                        <th>Titre de la publication</th>
+                        <th>Date de saisie</th>
+                        <th>Descriptions des publications</th>
+                        <th>Liens des publications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data_from_db %}
+                    <tr>
+                        <td>{{ row.0 }}</td>
+                        <td>{{ row.1 }}</td>
+                        <td>{{ row.2 }}</td>
+                        <td><a href=" {{ row.3 }}" target="_blank"> {{ row.3 }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+      </article>
+    </section>
+
+</body>
+</html>

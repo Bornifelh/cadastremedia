@@ -1,0 +1,126 @@
+/* Style général pour le formulaire */
+
+
+.dev_form {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: white;
+
+  float: left;
+  background-color: transparent;
+  padding: 20px;
+  margin: 10px;
+  top: 10px;
+
+}
+
+/* Style pour la section du formulaire */
+.dev_form section {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Style pour le titre du formulaire */
+.dev_form h1 {
+  font-size: 17px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dev_form p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style pour les champs de saisie */
+.dev_form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dev_form input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form label {
+  position: block;
+  font-size: 12px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.dev_form input[type="date"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dev_form input[type="month"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dev_form input[type="number"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dev_form input[type="mail"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style pour les boutons */
+.dev_form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+/* Style pour les boutons de type "RETOUR" */
+.dev_form button.opacity {
+  width: auto;
+}
+
+/* Style pour les boutons au survol */
+.dev_form button:hover {
+  background-color: #0056b3;
+  align-items: center;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}

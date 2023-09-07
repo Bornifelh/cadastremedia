@@ -1,0 +1,18 @@
+
+        .tab-content {
+           width: 900px;
+           overflow: auto;
+           border-collapse: collapse;
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+        .tab-content th {
+           background-color: #333;
+           color: white;
+           text-align: left;
+        }
+        .tab-content th,
+        .tab-content td {
+           border: 1px solid black;
+           padding: 4px;
+        }

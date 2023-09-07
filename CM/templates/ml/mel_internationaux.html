@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Medias en ligne - Internationaux</title>
+    <link rel="stylesheet" href="{% static 'css/style-formulaire.css' %}">
+    <link rel="stylesheet" href="{% static 'css/liste_liens.css' %}">
+</head>
+<div style="position: sticky; top: 5px;">
+          {% include 'nav_bar.html' %}
+    </div>
+<body>
+
+
+    <section>
+      <nav>
+        <ul>
+          <div class="dev_form">
+
+
+        <section>
+
+            <div>
+                <h1>Insertion d'un lien MEL Internationaux</h1>
+
+                    <form method="post">
+                        <input type="text" name="titre" placeholder="Titre" />
+                        <input type="text" name="lien" placeholder="Lien"/>
+                        <input type="text" name="description" placeholder="Description"/>
+                        <label>Date de saisie</label>
+                        <input type="date" name="datesaisie"/>
+                        <button type="submit" class="opacity">VALIDER</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Liste des liens MEL Internationaux</h1>
+        <div id="loading-spinner" style="display: none;">Loading...</div>
+
+    <table class="tab-content" id="MELINTER">
+                <thead>
+                    <tr>
+                        <th>Titre de la publication</th>
+                        <th>Date de saisie</th>
+                        <th>Descriptions des publications</th>
+                        <th>Liens des publications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+      </article>
+    </section>
+
+</body>
+</html>
